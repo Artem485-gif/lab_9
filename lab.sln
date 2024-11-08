@@ -1,31 +1,18 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab", "lab\lab.vcxproj", "{D14C2916-159A-4582-A5CC-B29E4D604818}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Debug|x64.ActiveCfg = Debug|x64
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Debug|x64.Build.0 = Debug|x64
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Debug|x86.ActiveCfg = Debug|Win32
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Debug|x86.Build.0 = Debug|Win32
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Release|x64.ActiveCfg = Release|x64
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Release|x64.Build.0 = Release|x64
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Release|x86.ActiveCfg = Release|Win32
-		{D14C2916-159A-4582-A5CC-B29E4D604818}.Release|x86.Build.0 = Release|Win32
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46CBC619-1413-4DDC-88F5-916FA655115D}
-	EndGlobalSection
-EndGlobal
+// lab.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+//
+
+#include <iostream>
+
+int main()
+{
+    float f, c, F, C;
+    printf(" temperature v F!:\n"); // Виводимо текст на екран
+    scanf_s("%f", &f);
+    printf(" temperature v C!:\n"); // Виводимо текст на екран
+    scanf_s("%f", &c);
+    C = (f - 32) * (5.0 / 9.0);
+    F = c * (9.0 / 5.0) + 32;
+    printf("temperatura v C = %f\n", C); // Виводимо текст на екран
+    printf("temperatura v F = %f\n", F); // Виводимо текст на екран
+    return 0; // Закінчуємо програму з кодом завершення 0
+}
